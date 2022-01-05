@@ -1,0 +1,35 @@
+{
+  "name": "paquetemintic",
+  "version": "1.0.0",
+  "description": "Backend Ciclo 4 G-31 MINTIC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilar": "tsc -w",
+    "desarrollo": "nodemon build/index.js"
+  },
+  "keywords": [
+    "mintic",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Luis Vicente Albarracin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.30",
+    "pg-promise": "^10.11.1",
+    "sharp": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/morgan": "^1.9.3",
+    "@types/sharp": "^0.29.5",
+    "nodemon": "^2.0.15"
+  }
+}
