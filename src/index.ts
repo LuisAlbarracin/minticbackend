@@ -2,6 +2,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import express from 'express';
 import jugadorRutas from './rutas/jugadorrutas';
+import accesoRutas from './rutas/accesorutas'
 
 class MiServidor {
 
@@ -27,6 +28,7 @@ class MiServidor {
 
   public rutas(): void{
     this.app.use('/api/jugador', jugadorRutas);
+    this.app.use('/api/publico/acceso', accesoRutas);
   }
 
   public iniciar():void{

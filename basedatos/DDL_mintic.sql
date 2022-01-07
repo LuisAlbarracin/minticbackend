@@ -35,8 +35,8 @@ alter table imagenes owner to user_node
 create table jugadores (
    cod_jugador          serial               not null,
    cod_usuario          int4                 not null,
-   posicion_jugador     int2                 not null,
-   dorsal_jugador       varchar(10)          not null,
+   posicion_jugador     varchar(30)          not null,
+   dorsal_jugador       int2          not null,
    constraint pk_jugadores primary key (cod_jugador)
 );
 

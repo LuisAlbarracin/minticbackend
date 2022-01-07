@@ -1,5 +1,5 @@
 export default {
-  'ruta_fotos': './src/imagenes/fotos/',
-  'ruta_fotos_sistema': './src/imagenes/sistema/',
-  'ruta_foto_defecto': 'foto_usuario.png'
+  'RUTA_FOTOS': './src/imagenes/fotos/',
+  'RUTA_FOTOS_SISTEMA': './src/imagenes/sistema/',
+  'RUTA_FOTO_DEFECTO': './src/imagenes/sistema/foto_usuario.png'
 }

@@ -30,9 +30,9 @@ values (1, '22666874', 'CC', 'Carlos Alberto', 'Valderrama', 'elpibe@hotmail.com
 /*==============================================================*/
 /* Table: jugadores                                             */
 /*==============================================================*/
-INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (3, 10, 'CAP');
-INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (4, 15, 'DEL');
-INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (5, 8, 'DEF');
+INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (3, 'DELANTERO', 10);
+INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (4, 'VOLANTE', 15);
+INSERT INTO jugadores(cod_usuario, posicion_jugador, dorsal_jugador) VALUES (5, 'DEFENZA', 3);
 
 /*==============================================================*/
 /* Table: jugaequipos                                           */
