@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import express from 'express';
 import jugadorRutas from './rutas/jugadorrutas';
 import accesoRutas from './rutas/accesorutas'
+import seguridad from './middleware/seguridad';
 
 class MiServidor {
 
@@ -14,7 +15,7 @@ class MiServidor {
     this.rutas();
   }
 
-  public configuracion(): void{
+  public configuracion(): void {
     this.app.set('PORT', 8099);
     this.app.use(cors());
     this.app.use(morgan('dev'));
@@ -26,13 +27,13 @@ class MiServidor {
     }));
   }
 
-  public rutas(): void{
-    this.app.use('/api/jugador', jugadorRutas);
+  public rutas(): void {
+    this.app.use('/api/privado/jugador', seguridad.verificarToken, jugadorRutas);
     this.app.use('/api/publico/acceso', accesoRutas);
   }
 
-  public iniciar():void{
-    this.app.listen(this.app.get('PORT'), ()=>{
+  public iniciar(): void {
+    this.app.listen(this.app.get('PORT'), () => {
       console.log("Servidor Api funcionando en el puerto: ", this.app.get('PORT'));
     });
   }
