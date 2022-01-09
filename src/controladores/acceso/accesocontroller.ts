@@ -5,8 +5,9 @@ import {SQL_ACCESO } from './../../consultas/acceso_sql';
 class AccesoController extends AccesoDAO{
 
   public iniciar(req: Request, res: Response): Promise<any>{
-    const correo = req.body.correoUsuario;
-    const clave = req.body.claveUsuario;
+    console.log(req.body);
+    const correo = req.body.correousuario;
+    const clave = req.body.claveusuario;
     const parametros = [
       correo,
       clave
